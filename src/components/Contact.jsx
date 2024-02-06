@@ -97,7 +97,7 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-        <div className="bg-gray-200 p-6 rounded-lg">
+        <div className="bg-gray-200 md:p-6 rounded-lg">
           <h1 className="text-4xl font-extrabold text-tertiary-200 ">
             Have a query?
           </h1>
@@ -105,7 +105,7 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-12 flex flex-col gap-8 bg-secondary-500 text-primary-900 p-8 rounded-xl"
+            className="mt-12 flex flex-col gap-8 bg-secondary-500 text-primary-900 p-4 md:p-8 rounded-xl"
           >
             <label className="flex flex-col">
               <span className=" font-medium mb-4">Your Name</span>
