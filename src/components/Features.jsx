@@ -11,12 +11,12 @@ const Features = () => {
       <div className="max-w-6xl mx-auto py-16 px-4">
         <h3 className="text-md text-center text-tertiary-200">Our Services</h3>
         <motion.h2
-          variants={textVariant()}
+          variants={textVariant(0.1)}
           className="text-4xl font-extrabold text-center mb-16 text-secondary-500"
         >
           Make The Change You Deserve
         </motion.h2>
-        <motion.div  variants={fadeIn("right", "spring", 1, 0.75)} className="grid grid-cols-1 md:grid-cols-3 gap-14 max-md:max-w-md mx-auto">
+        <motion.div  variants={fadeIn("right", "spring", 0.5, 0.75)} className="grid grid-cols-1 md:grid-cols-3 gap-14 max-md:max-w-md mx-auto">
           {features &&
             features.map((feature, key) => {
               return (
