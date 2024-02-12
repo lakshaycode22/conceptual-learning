@@ -1,21 +1,31 @@
+import {ReactTyped} from "react-typed";
+import { motion } from "framer-motion";
+import { SectionWrapper } from "../hoc";
+import { textVariant } from "../utils/motion";
+
 const Hero = () => {
   return (
-    <section class="bg-primary-900 text-secondary-500">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-        <div
-          class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
-        >
-          {" "}
-          <span class="text-sm font-medium">Visit Us Today</span>
+    <section class="bg-primary-900 text-tertiary-200 md:flex mb-8 md:mb-0 px-4 md:px-24">
+      <div class="py-8 mx-auto max-w-screen-xl text-center md:text-left lg:py-16">
+        <div className="mb-2">
+          Visit us today
         </div>
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl">
-          Conceptual Learning
-        </h1>
-        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-          A reliable source when you need help understanding any subject.We
+        <motion.h1 variants={textVariant()} class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-7xl text-secondary-500">
+        {/* <ReactTyped
+          strings={["Conceptual Learning","Sandeep Bhasin"]}
+          typeSpeed={100}
+          loop
+          backSpeed={20}
+          cursorChar=">"
+          showCursor={true}
+        /> */}
+        Conceptual Learning
+        </motion.h1>
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl">
+          A reliable source when you need help understanding any subject. We
           invest in the world’s potential.
         </p>
-        <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+        <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
           <a
             href="#"
             class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4"
@@ -50,8 +60,11 @@ const Hero = () => {
           </a>
         </div>
       </div>
+      <div className="mx-auto md:w-9/12 px-4 pt-8">
+        <img src="https://images.pexels.com/photos/301926/pexels-photo-301926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="image" className="rounded-md" />
+      </div>
     </section>
   );
 };
 
-export default Hero;
+export default SectionWrapper(Hero, "hero");

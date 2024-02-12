@@ -12,22 +12,25 @@ const Testimonials = () => {
           </h2>
         </div>
 
-        <div className="md:columns-2 lg:columns-3 gap-8 space-y-8">
+        <div className="md:columns-2 lg:columns-3 gap-8 space-y-8 ">
           {testimonials &&
             testimonials.map((testimonial, key) => {
               return (
-                <div key={key} className="aspect-auto p-8 rounded-2xl  bg-secondary-500 text-primary-900">
-                  <div className="flex gap-4">
-                    <div>
-                      <h6 className="text-2xl font-bold">
-                        <ImQuotesLeft className="text-4xl" />
-                        {testimonial.author}
-                      </h6>
+                <div className="">
+                  <div
+                    key={key}
+                    className="aspect-auto p-8 rounded-2xl text-tertiary-200 backdrop-blur-2xl"
+                  >
+                    <div className="flex gap-4">
+                      <div>
+                        <h6 className="text-2xl font-bold">
+                          <ImQuotesLeft className="text-4xl" />
+                          {testimonial.author}
+                        </h6>
+                      </div>
                     </div>
+                    <p className="mt-8 text-md ">{testimonial.comment}</p>
                   </div>
-                  <p className="mt-8 text-md ">
-                    {testimonial.comment}
-                  </p>
                 </div>
               );
             })}

@@ -37,8 +37,33 @@ export default {
         800: "#707070",
         900: "#5C5C5C",
       },
+      // primary: {
+      //   900: "#000234",
+      // },
+      // secondary: {
+      //   400: "#FD9235",
+      //   500: "#FD7702",
+      // },
+      // primary: {
+      //   900: "#103059",
+      // },
+      // secondary: {
+      //   400: "#F6C451",
+      //   500: "#F4B626",
+      // },
+      // primary: {
+      //   900: "#000000",
+      // },
+      // secondary: {
+      //   400: "#FFFFFF",
+      //   500: "#FFFFFF",
+      // },
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        card: "0px 35px 120px -15px #302A22",
+      },
+    },
   },
   plugins: [],
 };
