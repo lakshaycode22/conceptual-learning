@@ -16,7 +16,7 @@ const Features = () => {
         >
           Make The Change You Deserve
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-md:max-w-md mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-14 max-md:max-w-md mx-auto">
           {features &&
             features.map((feature, key) => {
               return (
@@ -27,12 +27,12 @@ const Features = () => {
                   >
 
                     <div className="p-6">
-                      {/* <feature.icon className="text-6xl" /> */}
                       <img src={feature.image} className="w-full h-48 rounded-lg"/>
+                      {/* <feature.icon className="text-6xl" /> */}
                       <h3 className="text-2xl font-semibold my-2 mt-4">
                         {feature.title}
                       </h3>
-                      <p className="text-md">{feature.paragraph}</p>
+                      <p className="text-md text-tertiary-500">{feature.paragraph}</p>
                     </div>
                   </Tilt>
                 </motion.div>

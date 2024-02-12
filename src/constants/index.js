@@ -5,54 +5,55 @@ import { BiSolidVideoRecording } from "react-icons/bi";
 import { SiTestcafe } from "react-icons/si";
 import { LuMessagesSquare } from "react-icons/lu";
 
+import classes from "../assets/featureImages/classes.png";
+import goals from "../assets/featureImages/goals.png";
+import online from "../assets/featureImages/online.png";
+import recorded from "../assets/featureImages/recorded.png";
+import tests from "../assets/featureImages/tests.png";
+import doubt from "../assets/featureImages/doubt.png";
+
 const features = [
   {
     icon: PiStudentBold,
     title: "Multiple Weekly Classes",
     paragraph:
       "Dive into the best learning experience with our multiple weekly classes. Our schedule ensures you can explore various topics, enhance your skills, and get the desired result.",
-    image:
-      "https://images.pexels.com/photos/1480861/pexels-photo-1480861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: classes,
   },
   {
     icon: GoGoal,
     title: "Goal Setting and Achievement",
     paragraph:
-      "Empower your aspirations. Define clear objectives and create actionable plans with our guidance, propelling you towards personal and professional success.",
-    image:
-      "https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "We help you empower your aspirations. Define clear objectives and create actionable plans with our guidance, propelling you towards personal and professional success.",
+    image: goals,
   },
   {
     icon: FaComputer,
     title: "Online support",
     paragraph:
       "Experience continuous growth with our dedicated online support. Connect with our teacher, access resources, and stay motivated on your learning journey, wherever you are. Your success is just a click away.",
-    image:
-      "https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: online,
   },
   {
     icon: BiSolidVideoRecording,
     title: "Recorded Lectures",
     paragraph:
       "Never miss a moment of insight with our recorded lectures. Accessible anytime, these recordings ensure you can revisit valuable lessons, grasp concepts at your own pace, and reinforce your learning journey with flexibility.",
-    image:
-      "https://images.pexels.com/photos/2510428/pexels-photo-2510428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: recorded,
   },
   {
     icon: SiTestcafe,
     title: "Weekly Tests",
     paragraph:
       "Evaluate your progress and reinforce your learning with our weekly tests. Designed to challenge and enhance your understanding, these assessments provide valuable insights to keep you on track towards your goals.",
-    image:
-      "https://images.pexels.com/photos/4022332/pexels-photo-4022332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: tests,
   },
   {
     icon: LuMessagesSquare,
     title: "Doubt class",
     paragraph:
       "Our dedicated sessions provide a supportive environment for addressing questions, clarifying concepts, and ensuring you confidently navigate your learning journey with clarity and understanding.",
-    image:
-      "https://images.pexels.com/photos/941555/pexels-photo-941555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: doubt,
   },
 ];
 
