@@ -16,11 +16,11 @@ const Features = () => {
         >
           Make The Change You Deserve
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-14 max-md:max-w-md mx-auto">
+        <motion.div  variants={fadeIn("right", "spring", 1, 0.75)} className="grid grid-cols-1 md:grid-cols-3 gap-14 max-md:max-w-md mx-auto">
           {features &&
             features.map((feature, key) => {
               return (
-                <motion.div variants={fadeIn("right", "spring", 0.5 * key, 0.75)}>
+                <div>
                   <Tilt
                     key={key}
                     className="bg-primary-900 border text-tertiary-200 border-tertiary-200 overflow-hidden rounded-lg shadow-card"
@@ -35,10 +35,10 @@ const Features = () => {
                       <p className="text-md text-tertiary-500">{feature.paragraph}</p>
                     </div>
                   </Tilt>
-                </motion.div>
+                </div>
               );
             })}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
