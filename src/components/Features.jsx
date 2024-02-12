@@ -20,7 +20,7 @@ const Features = () => {
           {features &&
             features.map((feature, key) => {
               return (
-                <motion.div variants={fadeIn("right", "spring", 0.5 * key, 0.75)}>
+                <div>
                   <Tilt
                     key={key}
                     className="bg-primary-900 border text-tertiary-200 border-tertiary-200 overflow-hidden rounded-lg shadow-card"
@@ -35,7 +35,7 @@ const Features = () => {
                       <p className="text-md text-tertiary-500">{feature.paragraph}</p>
                     </div>
                   </Tilt>
-                </motion.div>
+                </div>
               );
             })}
         </div>
