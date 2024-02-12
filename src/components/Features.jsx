@@ -11,16 +11,16 @@ const Features = () => {
       <div className="max-w-6xl mx-auto py-16 px-4">
         <h3 className="text-md text-center text-tertiary-200">Our Services</h3>
         <motion.h2
-          variants={textVariant(0.1)}
+          variants={textVariant()}
           className="text-4xl font-extrabold text-center mb-16 text-secondary-500"
         >
           Make The Change You Deserve
         </motion.h2>
-        <motion.div  variants={fadeIn("right", "spring", 0.5, 0.75)} className="grid grid-cols-1 md:grid-cols-3 gap-14 max-md:max-w-md mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-14 max-md:max-w-md mx-auto">
           {features &&
             features.map((feature, key) => {
               return (
-                <div>
+                <motion.div variants={fadeIn("right", "spring", 0.5 * key, 0.75)}>
                   <Tilt
                     key={key}
                     className="bg-primary-900 border text-tertiary-200 border-tertiary-200 overflow-hidden rounded-lg shadow-card"
@@ -35,10 +35,10 @@ const Features = () => {
                       <p className="text-md text-tertiary-500">{feature.paragraph}</p>
                     </div>
                   </Tilt>
-                </div>
+                </motion.div>
               );
             })}
-        </motion.div>
+        </div>
       </div>
     </div>
   );
