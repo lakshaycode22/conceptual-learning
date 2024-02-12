@@ -16,7 +16,7 @@ const Features = () => {
         >
           Make The Change You Deserve
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-14 max-md:max-w-md mx-auto">
+        <motion.div  variants={fadeIn("right", "spring", 1, 0.75)} className="grid grid-cols-1 md:grid-cols-3 gap-14 max-md:max-w-md mx-auto">
           {features &&
             features.map((feature, key) => {
               return (
@@ -38,7 +38,7 @@ const Features = () => {
                 </div>
               );
             })}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
