@@ -8,6 +8,7 @@ import Testimonials from './components/Testimonials'
 import Statistics from './components/Statistics'
 import Map from './components/Map'
 import Contact from './components/Contact'
+import Results from './components/Results'
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
       <Hero/>
       <Statistics/>
       <Features/>
-      <About/>
+      <Results/>
+      {/* <About/> */}
       <Testimonials/>
       <Map/>
       <Contact/>

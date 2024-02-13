@@ -12,6 +12,54 @@ import recorded from "../assets/featureImages/recorded.png";
 import tests from "../assets/featureImages/tests.png";
 import doubt from "../assets/featureImages/doubt.png";
 
+import abhimanuGaba from "../assets/results/AbhimanuGaba.jpg";
+import arnavBansal from "../assets/results/ArnavBansal.jpg";
+import hardikSachdeva from "../assets/results/HardikSachdeva.jpg";
+import palakGarg from "../assets/results/PalakGarg.jpg";
+import sanskritiKaran from "../assets/results/sanskritikaran.jpg";
+import shreeyaShawney from "../assets/results/shreeyaShawney.jpg";
+
+const results = [
+  {
+    image: abhimanuGaba,
+    name : "Abhimanu Gaba",
+    maths: 98,
+    science: 95,
+  },
+  {
+    image: arnavBansal,
+    name : "Arnav Bansal",
+    maths: 97,
+    science: 98,
+  },
+  {
+    image: hardikSachdeva,
+    name : "Hardik Sachdeva",
+    maths: 97,
+    science: 95,
+  },
+  {
+    image: palakGarg,
+    name : "Palak Garg",
+    maths: 97,
+    science: 95,
+  },
+  {
+    image: sanskritiKaran,
+    name : "Sanskriti Karan",
+    maths: 96,
+    science: 95,
+  },
+  {
+    image: shreeyaShawney,
+    name : "Shreeya Shawney",
+    maths: 98,
+    science: 99,
+  },
+  
+
+];
+
 const features = [
   {
     icon: PiStudentBold,
@@ -174,4 +222,4 @@ const testimonials = [
   // },
 ];
 
-export { features, testimonials };
+export { features, testimonials, results };
