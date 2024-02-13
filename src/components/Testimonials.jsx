@@ -29,7 +29,7 @@ const Testimonials = () => {
                         </h6>
                       </div>
                     </div>
-                    <p className="mt-8 text-md ">{testimonial.comment}</p>
+                    <p className="mt-8 text-md text-tertiary-500">{testimonial.comment}</p>
                   </div>
                 </div>
               );
