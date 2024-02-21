@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import { courses } from "../constants";
 import { SectionWrapper } from "../hoc";
+import { motion } from "framer-motion";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const Courses = () => {
   const [data, setData] = useState(courses[0]);
@@ -14,24 +16,27 @@ const Courses = () => {
 
   return (
     <div className="bg-primary-900">
-        
-      <div className="mx-8 max-w-6xl lg:mx-auto py-16 text-justify">
-        <h1 className="text-5xl font-extrabold text-center mb-16 text-secondary-500">
+      <div className="mx-8 max-w-6xl lg:mx-auto pb-16 text-justify">
+        <motion.h1
+          variants={textVariant()}
+          className="text-5xl font-extrabold text-center mb-16 text-secondary-500"
+        >
           Courses
-        </h1>
+        </motion.h1>
 
         <div className="mb-16">
           <div className="md:flex md:justify-around text-center">
             {grades &&
               grades.map((grade, key) => {
                 return (
-                  <button
+                  <motion.button
                     key={key}
+                    variants={fadeIn("right", "spring", 0.5 * (key % 4), 0.75)}
                     onClick={() => setData(courses[key])}
                     className="border-2 mx-2 rounded-lg w-60 p-4 hover:bg-secondary-600 hover:border-secondary-500 hover:text-primary-900 my-2"
                   >
                     {grade}
-                  </button>
+                  </motion.button>
                 );
               })}
           </div>

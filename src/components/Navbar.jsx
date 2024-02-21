@@ -1,22 +1,23 @@
 import { useState } from "react";
 import { SectionWrapper } from "../hoc";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [state, setState] = useState(false);
+  const navigate = useNavigate();
 
-  // Replace javascript:void(0) paths with your paths
   const navigation = [
-    { title: "Features", path: "javascript:void(0)" },
-    { title: "Integrations", path: "javascript:void(0)" },
-    { title: "Customers", path: "javascript:void(0)" },
-    { title: "Pricing", path: "javascript:void(0)" },
+    { title: "Courses", path: "/courses" },
+    { title: "Study", path: "/study-material" },
+    { title: "About Us", path: "/about-us" },
+    { title: "Gallery", path: "/gallery" },
   ];
 
   return (
     <nav className="bg-primary-900 border-b w-full md:static md:text-sm md:border-none">
       <div className="text-tertiary-100 text-lg items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
-          <a href="#home">
+          <a href="/">
             <img
               src=""
               width={120}
@@ -70,9 +71,9 @@ const Navbar = () => {
             {navigation.map((item, idx) => {
               return (
                 <li key={idx} className=" hover:text-secondary-500 hover:bg-opacity-30 hover:bg-secondary-500 px-4 py-2">
-                  <a href={item.path} className="block">
+                  <button onClick={() => navigate(item.path)} className="block">
                     {item.title}
-                  </a>
+                  </button>
                 </li>
               );
             })}
