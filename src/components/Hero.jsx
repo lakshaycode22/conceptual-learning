@@ -1,12 +1,11 @@
-import {ReactTyped} from "react-typed";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
 const Hero = () => {
   return (
-    <section class="bg-primary-900 text-tertiary-200 md:flex mb-8 md:mb-0 px-6">
-      <div class="py-8 max-w-screen-xl text-center md:text-left lg:py-16">
+    <section className= "max-w-7xl mx-auto bg-primary-900 text-tertiary-200 md:flex mb-4 md:mb-0 px-6">
+      <div className="py-8 max-w-screen-xl text-center md:text-left lg:py-16">
         <div className="mb-2">
           Visit us today
         </div>

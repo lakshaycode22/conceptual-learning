@@ -20,7 +20,7 @@ const Features = () => {
           {features &&
             features.map((feature, key) => {
               return (
-                <motion.div variants={fadeIn("right", "spring", 0.5 * (key), 0.75)}>
+                <motion.div variants={fadeIn("right", "spring", 0.5 * (key % 3), 0.75)}>
                   <Tilt
                     key={key}
                     className="bg-primary-900 border text-tertiary-200 border-tertiary-200 overflow-hidden rounded-lg shadow-card"

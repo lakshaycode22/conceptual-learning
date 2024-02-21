@@ -26,7 +26,7 @@ const Results = () => {
           {results.map((result, key) => {
             return (
               <Tilt>
-                <motion.div variants={fadeIn("right", "spring", 0.5 * (key), 0.75)}
+                <motion.div variants={fadeIn("right", "spring", 0.5 * (key % 3), 0.75)}
                   class="mb-6 lg:mb-0 border-tertiary-200 border rounded-lg shadow-card"
                   key={key}
                 >

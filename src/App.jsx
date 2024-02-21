@@ -1,33 +1,19 @@
-import { Fragment } from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Features from './components/Features'
-import About from './components/About'
-import Testimonials from './components/Testimonials'
-import Statistics from './components/Statistics'
-import Map from './components/Map'
-import Contact from './components/Contact'
-import Results from './components/Results'
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Courses from "./components/Courses";
+import Navbar from "./components/Navbar";
 
 function App() {
-
   return (
-    <Fragment>
-      <div className='bg-primary-900'>
-
-      <Navbar/>
-      <Hero/>
-      <Statistics/>
-      <Features/>
-      <Results/>
-      {/* <About/> */}
-      <Testimonials/>
-      <Map/>
-      <Contact/>
-      </div>
-    </Fragment>
-  )
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="" element={<Home />} />
+        <Route path="/courses" element={<Courses />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

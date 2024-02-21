@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SectionWrapper } from "../hoc";
 
 const Navbar = () => {
   const [state, setState] = useState(false);
@@ -82,4 +83,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default SectionWrapper(Navbar, "navbar");

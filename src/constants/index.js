@@ -19,45 +19,151 @@ import palakGarg from "../assets/results/PalakGarg.jpg";
 import sanskritiKaran from "../assets/results/sanskritikaran.jpg";
 import shreeyaShawney from "../assets/results/shreeyaShawney.jpg";
 
+const courses = [
+  {
+    class: "Class IX",
+    brief:
+      "The team of subject experts at conceptual learning works with an aim to provide CBSE class 9 th students with an all-inclusive study module. The conceptual learning class 9 module is designed to create abroad platform for learning objective subjects like maths and science, and strengthen students’ knowledge in theory and language subjects as well. Notes available for class 9 CBSE students include detailed explanation for all topics as well as engaging animated vides to support the text. course material provided by us of Math, Science, English, Social Studies and Hindi for CBSE class 9 is sufficient to excel the best in the exam and moreover with our weekly test schedule, makes them perfect along with quizzes after every topic makes students understand the concept clearly.",
+    subjects: [
+      {
+        title: "CBSE Class 9 th Maths",
+        chapters: [
+          "Number system",
+          "Polynomials",
+          "Coordinate geometry",
+          "Linear equation in two variable",
+          "Lines and angles",
+          "Quadrilaterals",
+          "Surface area and volume",
+        ],
+      },
+      {
+        title: "CBSE Class 9- Science",
+        chapters: [
+          "Matter in Our Surrounding",
+          "Is Matter Around Us Pure.",
+          "Atoms & Molecules",
+          "The Fundamental unit of life",
+          "Tissues",
+          "Motion",
+          "Force and law of motion",
+        ],
+      },
+      {
+        title: "CBSE Class 9 – English",
+        chapters: [
+          "Articles",
+          "Nouns",
+          "Pronouns",
+          "Adjectives",
+          "Adverbs",
+          "Verbs",
+        ],
+      },
+    ],
+    attributes: [
+      "Engaging chapter notes with videos and activities for CBSE Class 9",
+      "Worksheet with every class for thorough preparation.",
+      "Free NCERT solution based on CBSE curriculum.",
+      "Weekly Test for thorough progress.",
+      "Personalized assessment of progress available to students.",
+      "Personalized doubt classes with teachers.",
+      "Interactive quiz after every topic for further clearance.",
+    ],
+    additional_info:
+      "Additionally, our curriculum for CBSE Class 9 students accommodate the vast syllabus prescribed by the Board. We aspire to tackle and simplify the most difficult portions in Class 9 Math and Class 9 Science that students usually struggle with. Students of CBSE Class 9 can now look beyond the anxiety that comes with studying and exams, and learn the smart way.",
+  },
+  {
+    class: "Class X",
+    brief:
+      "Class 10 is considered a crucial stage in the academic life of CBSE students. The pressure, the amount of syllabus as well as the impending board exams contribute to students' anxiety. For students in CBSE class 10 experiencing their first set of Board exams, conceptual learning provides a comprehensive study package. This means, our study module is basically they need to become fully adept in solving, analysing, calculating and expressing. Notes provided by us are engaging and help students explore new ways to look at questions and their solutions. The interactive videos, animations and graphic illustrations take the monotony out of studying, thereby giving students the opportunity to carve their way to successful exam preparation. The study material for CBSE class 10 is available for Science, Math, Social Studies, English and Hindi.",
+    subjects: [
+      {
+        title: "CBSE Class 10 MAth",
+        chapters: [
+          "Real Number",
+          "Polynomials",
+          "Pairs of Linear eq in Two variables",
+          "Quadratic equations",
+          "Arithmetic progression",
+          "Coordinate Geometry",
+          "Similar Triangle",
+          "Introduction to Trigonometry",
+          "Some Application of Trigonometry",
+          "Circles",
+          "Areas Related to Circles",
+          "Surface areas and volumes",
+        ],
+      },
+      {
+        title: "CBSE Class 10 -Science",
+        chapters: [
+          "Chemical Reaction n Equation",
+          "Acids, Bases and Salts",
+          "Metals and non-Metals",
+          "Carbon and its compounds",
+          "Life processes",
+          "Control n coordination",
+          "How Do Organisms Reproduce",
+          "The Human Eye",
+          "Electricity",
+          "Magnetic effect of electric current",
+        ],
+      },
+    ],
+    attributes: [
+      "Innovative way of teaching with proper animations and activities.",
+      "Exclusive study material to understand the concepts.",
+      "Excellent assessment methods Weekly test to evaluate what the student understands and what needs to be improved.",
+      "Quiz after every topic makes all hidden doubts cleared and brings confidence.",
+      "Sample papers and Board paper for CBSE Class 10",
+      "Free NCERT solutions based on the CBSE Syllabus.",
+      "Notes covered different types of questions from NCERT, Exampler, R.D.Sharma, R.S Agarwal.",
+      "Personalized reports and assessment of preparation with growth chart.",
+      "Monthly attendance report to parents.",
+    ],
+    additional_info:
+      "Conceptual learning aims at leaving no stone unturned in ensuring all round education and preparation for Board exams. CBSE Class 10 students can practice, revise and learn efficiently and ensure high scores in the process. Students at conceptual learning can avail study modules prepared by our expert while preparing CBSE Class 10 Math and Science.",
+  },
+];
+
 const results = [
   {
     image: abhimanuGaba,
-    name : "Abhimanu Gaba",
+    name: "Abhimanu Gaba",
     maths: 98,
     science: 95,
   },
   {
     image: arnavBansal,
-    name : "Arnav Bansal",
+    name: "Arnav Bansal",
     maths: 97,
     science: 98,
   },
   {
     image: hardikSachdeva,
-    name : "Hardik Sachdeva",
+    name: "Hardik Sachdeva",
     maths: 97,
     science: 95,
   },
   {
     image: palakGarg,
-    name : "Palak Garg",
+    name: "Palak Garg",
     maths: 97,
     science: 95,
   },
   {
     image: sanskritiKaran,
-    name : "Sanskriti Karan",
+    name: "Sanskriti Karan",
     maths: 96,
     science: 95,
   },
   {
     image: shreeyaShawney,
-    name : "Shreeya Shawney",
+    name: "Shreeya Shawney",
     maths: 98,
     science: 99,
   },
-  
-
 ];
 
 const features = [
@@ -222,4 +328,4 @@ const testimonials = [
   },
 ];
 
-export { features, testimonials, results };
+export { features, testimonials, results, courses };
