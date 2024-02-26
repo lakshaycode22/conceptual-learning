@@ -63,7 +63,11 @@ export default {
       boxShadow: {
         card: "0px 35px 120px -15px #302A22",
       },
+      backgroundImage: {
+        "hero-pattern": "url('https://images.unsplash.com/photo-1517241034903-9a4c3ab12f00?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+      },
     },
+
   },
   plugins: [],
 };

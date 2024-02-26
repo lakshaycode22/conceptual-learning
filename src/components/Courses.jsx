@@ -25,18 +25,25 @@ const Courses = () => {
         </motion.h1>
 
         <div className="mb-16">
-          <div className="md:flex md:justify-around text-center">
+          <div className="md:flex font-bold md:justify-around text-center">
             {grades &&
               grades.map((grade, key) => {
                 return (
-                  <motion.button
-                    key={key}
-                    variants={fadeIn("right", "spring", 0.5 * (key % 4), 0.75)}
-                    onClick={() => setData(courses[key])}
-                    className="border-2 mx-2 rounded-lg w-60 p-4 hover:bg-secondary-600 hover:border-secondary-500 hover:text-primary-900 my-2"
-                  >
-                    {grade}
-                  </motion.button>
+                  <div className="green-pink-gradient p-1 rounded-lg">
+                    <motion.button
+                      key={key}
+                      variants={fadeIn(
+                        "right",
+                        "spring",
+                        0.5 * (key % 4),
+                        0.75
+                      )}
+                      onClick={() => setData(courses[key])}
+                      className=" rounded-lg w-60 p-4 bg-primary-900 hover:bg-secondary-600 hover:border-secondary-500 hover:text-primary-900 "
+                    >
+                      {grade}
+                    </motion.button>
+                  </div>
                 );
               })}
           </div>
@@ -44,9 +51,12 @@ const Courses = () => {
 
         {data && (
           <div className="">
-            <h1 className="text-center mt-8 text-secondary-500 text-2xl md:text-4xl">
+            <motion.h1
+              variants={textVariant()}
+              className="text-center font-semibold mt-8 text-secondary-500 text-2xl md:text-4xl"
+            >
               {data.class}
-            </h1>
+            </motion.h1>
             <div className="text-md md:text-lg">
               <div className="md:flex mb-8 md:mb-0 ">
                 <div className="flex-1 py-8 max-w-screen-xl md:text-left lg:py-16">
@@ -62,21 +72,33 @@ const Courses = () => {
               </div>
 
               <div className="md:flex md:justify-around">
-                {data.subjects.map((subject, key) => {
-                  return (
-                    <div key={key} className="text-center md:text-left">
-                      <h2 className="text-2xl text-secondary-500 my-2">
-                        {subject.title}
-                      </h2>
-                      <ul className="list-disc">
-                        {subject.chapters.map((chapter, key) => {
-                          return <li key={key}>{chapter}</li>;
-                        })}
-                      </ul>
-                    </div>
-                  );
-                })}
+                {data.subjects &&
+                  data.subjects.map((subject, key) => {
+                    return (
+                      <div key={key} className="text-center md:text-left">
+                        <h2 className="text-2xl font-semibold text-secondary-500 my-2">
+                          {subject.title}
+                        </h2>
+                        <ul className="list-disc">
+                          {subject.chapters.map((chapter, key) => {
+                            return <li key={key}>{chapter}</li>;
+                          })}
+                        </ul>
+                      </div>
+                    );
+                  })}
               </div>
+
+              <h2 className="text-2xl font-semibold text-secondary-500 my-2">
+                Attributes
+              </h2>
+              <ul className="list-disc mt-8">
+                {data.attributes &&
+                  data.attributes.map((attribute, key) => {
+                    return <li key={key}>{attribute}</li>;
+                  })}
+              </ul>
+
               <p className="text-tertiary-200 my-16">{data.additional_info}</p>
             </div>
           </div>
