@@ -27,7 +27,7 @@ const Card = ({ result, index }) => {
             <path fill={color[index % 3]} d={path[index % 3]}></path>
           </svg>
         </div>
-        <div class={`${backgroundColor[index % 3]}`}>
+        <div class={`${backgroundColor[index % 3]} rounded-b-lg`}>
           <h5 class="mb-4 text-2xl font-bold">{result.name}</h5>
           <p class="text-3xl mb-2">Maths: {result.maths}</p>
           <p class="text-3xl pb-8">Science: {result.science}</p>
