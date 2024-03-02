@@ -21,13 +21,13 @@ const Card = ({ result, index }) => {
         <div class="relative overflow-hidden bg-cover bg-no-repeat">
           <img
             src={result.image}
-            class="h-80 w-full object-cover object-top rounded-lg"
+            class="h-80 w-full object-cover object-top rounded-t-lg"
           />
           <svg class="absolute left-0 bottom-0" viewBox="0 0 1440 320">
             <path fill={color[index % 3]} d={path[index % 3]}></path>
           </svg>
         </div>
-        <div class={`${backgroundColor[index % 3]} rounded-lg`}>
+        <div class={`${backgroundColor[index % 3]}`}>
           <h5 class="mb-4 text-2xl font-bold">{result.name}</h5>
           <p class="text-3xl mb-2">Maths: {result.maths}</p>
           <p class="text-3xl pb-8">Science: {result.science}</p>
