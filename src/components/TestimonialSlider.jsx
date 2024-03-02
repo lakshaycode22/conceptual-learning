@@ -16,8 +16,8 @@ const TestimonialSlider = () => {
           What Others Say About Us
         </h2>
       </div>
-      <div className="">
-        <div className="flex animate-marquee-infinite">
+      <div className="flex overflow-hidden space-x-16 group">
+        <div className="flex animate-marquee-infinite group-hover:paused">
           {testimonials &&
             testimonials.map((testimonial, key) => {
               return (

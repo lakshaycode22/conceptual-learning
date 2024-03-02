@@ -63,7 +63,7 @@ const Contact = () => {
       );
   };
   return (
-    <div className=" rounded-lg max-w-7xl mx-auto">
+    <div className=" rounded-lg max-w-7xl mx-auto" id = "contact">
         
       <div className="grid md:grid-cols-2 items-center gap-16 sm:p-10 p-4">
         <div>

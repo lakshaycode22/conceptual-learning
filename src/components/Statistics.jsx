@@ -58,7 +58,7 @@ const Statistics = () => {
         </div>
         <div className="md:my-auto">
           <a
-            href=""
+            href="#contact"
             className=" py-3 px-5 text-2xl font-medium text-center  rounded-full text-white  green-blue-gradient"
           >
             {" "}

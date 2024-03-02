@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import HeroBg1 from "../assets/HeroBg1.png";
+import { IoMdContact } from "react-icons/io";
 
 const Hero = () => {
   return (
@@ -31,7 +32,7 @@ const Hero = () => {
         <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
           <a
             href="#features"
-            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center  rounded-full text-white text-xl green-blue-gradient"
+            className="inline-flex justify-center items-center py-3 px-5 font-medium text-center  rounded-full text-white text-xl green-blue-gradient"
           >
             Learn more
             <svg
@@ -48,18 +49,13 @@ const Hero = () => {
             </svg>
           </a>
           <a
-            href="#"
-            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center rounded-full border"
+            href="#contact"
+            className="inline-flex justify-center items-center py-3 px-5 text-xl font-medium text-center rounded-full border"
           >
-            <svg
-              className="mr-2 -ml-1 w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path>
-            </svg>
-            Watch video
+            <div className="flex">
+              <IoMdContact className="my-auto text-2xl mr-2"/>
+              <p>Contact Us</p>
+            </div>
           </a>
         </div>
       </div>
