@@ -17,20 +17,20 @@ const Card = ({ result, index }) => {
   ];
   return (
     <Tilt>
-      <div class="rounded-lg">
-        <div class="relative overflow-hidden bg-cover bg-no-repeat">
+      <div className="rounded-lg">
+        <div className="relative overflow-hidden bg-cover bg-no-repeat">
           <img
             src={result.image}
-            class="h-80 w-full object-cover object-top rounded-t-lg"
+            className="h-80 w-full object-cover object-top rounded-t-lg"
           />
-          <svg class="absolute left-0 bottom-0" viewBox="0 0 1440 320">
+          <svg className="absolute left-0 bottom-0" viewBox="0 0 1440 320">
             <path fill={color[index % 3]} d={path[index % 3]}></path>
           </svg>
         </div>
-        <div class={`${backgroundColor[index % 3]} rounded-b-lg`}>
-          <h5 class="mb-4 text-2xl font-bold">{result.name}</h5>
-          <p class="text-3xl mb-2">Maths: {result.maths}</p>
-          <p class="text-3xl pb-8">Science: {result.science}</p>
+        <div className={`${backgroundColor[index % 3]} rounded-b-lg`}>
+          <h5 className="mb-4 text-2xl font-bold">{result.name}</h5>
+          <p className="text-3xl mb-2">Maths: {result.maths}</p>
+          <p className="text-3xl pb-8">Science: {result.science}</p>
         </div>
       </div>
     </Tilt>
@@ -39,8 +39,8 @@ const Card = ({ result, index }) => {
 
 const Results = () => {
   return (
-    <div class="mx-auto max-w-7xl md:my-8 md:mb-0 px-6">
-      <section class=" text-center">
+    <div className="mx-auto max-w-7xl md:my-8 md:mb-0 px-6">
+      <section className=" text-center">
         <h3 className="text-md text-center">Last year results</h3>
         {isMobile ? (
           <h2 className="text-4xl font-extrabold text-center mb-16">
@@ -55,18 +55,18 @@ const Results = () => {
           </motion.h2>
         )}
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-14 mx-auto max-md:max-w-md">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-14 mx-auto max-md:max-w-md">
           {results.map((result, key) => {
             return (
               <div key={key}>
                 {isMobile ? (
-                  <div class="mb-6 lg:mb-0 rounded-lg">
+                  <div className="mb-6 lg:mb-0 rounded-lg">
                     <Card result={result} index={key}></Card>
                   </div>
                 ) : (
                   <motion.div
                     variants={fadeIn("right", "spring", 0.5 * (key % 3), 0.75)}
-                    class="mb-6 lg:mb-0 rounded-lg"
+                    className="mb-6 lg:mb-0 rounded-lg"
                   >
                     <Card result={result} index={key}></Card>
                   </motion.div>

@@ -13,14 +13,15 @@ const Home = () => {
     <Fragment>
         <Hero />
 
-        {/* <Statistics /> */}
+        
         <Features />
 
         <Results />
+        <Statistics />
         {/* <Testimonials /> */}
-        {/* <TestimonialSlider/> */}
-        {/* <Map /> */}
-        {/* <Contact /> */}
+        <TestimonialSlider/>
+        <Map />
+        <Contact />
     </Fragment>
   );
 };
