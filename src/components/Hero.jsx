@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import HeroBg1 from "../assets/HeroBg1.png"
+import HeroBg1 from "../assets/HeroBg1.png";
 
 const Hero = () => {
   return (
@@ -10,16 +10,24 @@ const Hero = () => {
         <div className="mb-2 md:text-4xl text-2xl">Welcome to</div>
         <motion.h1
           variants={textVariant()}
-          class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-7xl text-secondary-500"
+          class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-7xl text-secondary-500 border-b-2 border-darkGreen"
         >
           CONCEPTUAL LEARNING
         </motion.h1>
         <p class="mb-2 text-xl font-normal text-gray-500 md:text-2xl">
-        Where <span className="text-darkGreen font-semibold">Maths and Science</span>  comes to life
+          Where{" "}
+          <span className="text-darkGreen font-semibold">
+            Maths and Science
+          </span>{" "}
+          comes to life
         </p>
-        <p class="mb-8 text-lg font-normal text-gray-500 md:text-xl">
-        Transforming education with engaging animations for grades VIth to XIIth.
-        </p>
+        <ul class="mb-8 mx-8 md:mx-0 text-md font-normal text-gray-500 md:text-xl list-disc text-left">
+          <li>Empowerment Through Education: Grades VI to XII</li>
+          <li>Unleash Your Potential Across Multiple Class Levels</li>
+          <li>Chart Your Course to Academic Success with Expert Guidance</li>
+          <li>Join a Community of Learning Excellence</li>
+          <li>Discover a Journey of Growth and Achievement</li>
+        </ul>
         <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
           <a
             href="#features"
@@ -55,10 +63,10 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className=" md:w-11/12 md:pt-10 md:pl-20">
+      <div className=" md:w-11/12 md:mt-20 md:pl-20">
         <img
           // src="https://images.pexels.com/photos/301926/pexels-photo-301926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          src = {HeroBg1}
+          src={HeroBg1}
           alt="image"
           className="rounded-md"
         />
