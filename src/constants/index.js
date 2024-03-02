@@ -252,80 +252,80 @@ const testimonials = [
     comment:
       "It's a great experience studying at conceptual learning. The learning atmosphere is the best . The teacher is so cooperative and kind . Sir shows faith in us and encourages us to do more hardwork.I recommend  that you should give conceptual learning a shot. I am grateful for all the efforts the teacher puts in.",
   },
-  // {
-  //   author: "Riya Gupta",
-  //   comment:
-  //     "I have been studying here since almost 5years and my experience has been brilliant with them.The study pattern,the environment,the material everything was so effective.Here the teachers are truly a friend who allows us to get comfortable and they apply  their 100% effort in teaching",
-  // },
-  // {
-  //   author: "Shubhra Atreja",
-  //   comment:
-  //     "An educational point with a friendly and comfortable aura. The teachers are really great and focus on the overall growth of the students. Perfect balance of studying and fun, the classes can never get boring. One of the best things is that the teachers always have their arms open for extra classes or doubt solving classes at any point of time. Regular tests are held, this Institute is truly amazing.",
-  // },
-  // {
-  //   author: "Dhriti Aggarwal",
-  //   comment:
-  //     "The teaching is very good and interactive, all concepts are clear personal attention is also given with efficient assignments and tests",
-  // },
-  // {
-  //   author: "Neelam Wadhwa",
-  //   comment:
-  //     "The best coaching in the vicinity. The teacher puts in a lot of individual effort to make sure that all the concepts are clear. Regular tests, revision and extra classes are conducted. There is more interaction between the students and teacher as the number of students is limited. The teacher is very diligent and gives his 100%. He also gives individual classes as and when required. His years of experience in the subjects is commendable.",
-  // },
-  // {
-  //   author: "Aayushi Singh",
-  //   comment:
-  //     "Sandeep Sir's manner of teaching is soo amazing and understandable!! He's great at building confidence and making lessons fun and interactive. He's patient and supportive and knows how to keep motivating his students. In my opinion the best teacher I have ever had.",
-  // },
-  // {
-  //   author: "Hitarth Sachdeva",
-  //   comment:
-  //     "This is the best institute ever. Sir is very hardworking and teaches very well. Each and every concept is clear. The way of teaching is very unique and interactive.",
-  // },
-  // {
-  //   author: "Hardik Sachdeva",
-  //   comment:
-  //     "Best institute for Studying. It feels great here because of a good environment to study. I was able to understand all the concepts here and in case i had any doubts, they were cleared within the same class.",
-  // },
-  // {
-  //   author: "Divija Chhabra",
-  //   comment:
-  //     "This is the best coaching institute for students who are looking for clearing their basics and building their knowledge, especially in the sectors of maths of science. My personal experience with the teachers has been really great! The teachers are friendly and ways of teaching are quite appreciable. Whoever comes here never leaves unsatisfied..All precautionery measures with respect to COVID-19 are also being taken for the safety...Its definitely worth😀😀",
-  // },
-  // {
-  //   author: "Angel Gupta",
-  //   comment:
-  //     "This institution is the best institution i found yet. Conceptual learning clear all my doubts. This is the place where i have build my confidence level and now i can answer all the questions in school without any hesitation.during this pandemic also this institute had try its best to give a enjoyable and understandable learning,as a good and helpful student i recommend you to try once.",
-  // },
-  // {
-  //   author: "Grantik Sahni",
-  //   comment:
-  //     "My sir is very thorough and take careful measures in helping me grasp the concept more carefully and helps me to concentrate on my study very well.That has made me really think about how I should come up with the answer.I like how he is straight forward and answers our every single doubt to the point.Great sir ever had!!!",
-  // },
-  // {
-  //   author: "Sarita Chaudhary",
-  //   comment:
-  //     "Absolutely one of the finest learning places i have chosen for my daughter. They are excellent teachers. Hearts of teachers brimmed with love and patience for the students have given no possibility for any sense of discouragement, despondency or pessimism among students. Everything from revision tests to discipline are maintained or carried out in a systematic way which increases the proficiency of learners.",
-  // },
-  // {
-  //   author: "Prabhleen Kaur",
-  //   comment:
-  //     "Studying in this Institute is really intriguing.... As the teachers in the Institute create such exciting ways to explain a concept and provide you a platform to conveniently showcase your skills and knowledge..",
-  // },
-  // {
-  //   author: "Meenu",
-  //   comment:
-  //     "Best place for build your future whosoever had come here is never gone upset or doubtful. Once you come here you will never leave till you study in school. Trust me he is a world best teacher i have ever seen , he is just a knowledge book. SANDEEP SIR is the best teacher in the world😀 …",
-  // },
-  // {
-  //   author: "Abhinav Jha",
-  //   comment: "Concepts are crystal clear. Good teaching 👍 …",
-  // },
-  // {
-  //   author: "Payal Mehta",
-  //   comment:
-  //     "100% satisfied with Sandeep sir. I have never seen any teacher doing so much of hard work for his students. My son Aryan Mehta is very lucky to have Sandeep sir as his teacher.",
-  // },
+  {
+    author: "Riya Gupta",
+    comment:
+      "I have been studying here since almost 5years and my experience has been brilliant with them.The study pattern,the environment,the material everything was so effective.Here the teachers are truly a friend who allows us to get comfortable and they apply  their 100% effort in teaching",
+  },
+  {
+    author: "Shubhra Atreja",
+    comment:
+      "An educational point with a friendly and comfortable aura. The teachers are really great and focus on the overall growth of the students. Perfect balance of studying and fun, the classes can never get boring. One of the best things is that the teachers always have their arms open for extra classes or doubt solving classes at any point of time. Regular tests are held, this Institute is truly amazing.",
+  },
+  {
+    author: "Dhriti Aggarwal",
+    comment:
+      "The teaching is very good and interactive, all concepts are clear personal attention is also given with efficient assignments and tests",
+  },
+  {
+    author: "Neelam Wadhwa",
+    comment:
+      "The best coaching in the vicinity. The teacher puts in a lot of individual effort to make sure that all the concepts are clear. Regular tests, revision and extra classes are conducted. There is more interaction between the students and teacher as the number of students is limited. The teacher is very diligent and gives his 100%. He also gives individual classes as and when required. His years of experience in the subjects is commendable.",
+  },
+  {
+    author: "Aayushi Singh",
+    comment:
+      "Sandeep Sir's manner of teaching is soo amazing and understandable!! He's great at building confidence and making lessons fun and interactive. He's patient and supportive and knows how to keep motivating his students. In my opinion the best teacher I have ever had.",
+  },
+  {
+    author: "Hitarth Sachdeva",
+    comment:
+      "This is the best institute ever. Sir is very hardworking and teaches very well. Each and every concept is clear. The way of teaching is very unique and interactive.",
+  },
+  {
+    author: "Hardik Sachdeva",
+    comment:
+      "Best institute for Studying. It feels great here because of a good environment to study. I was able to understand all the concepts here and in case i had any doubts, they were cleared within the same class.",
+  },
+  {
+    author: "Divija Chhabra",
+    comment:
+      "This is the best coaching institute for students who are looking for clearing their basics and building their knowledge, especially in the sectors of maths of science. My personal experience with the teachers has been really great! The teachers are friendly and ways of teaching are quite appreciable. Whoever comes here never leaves unsatisfied..All precautionery measures with respect to COVID-19 are also being taken for the safety...Its definitely worth😀😀",
+  },
+  {
+    author: "Angel Gupta",
+    comment:
+      "This institution is the best institution i found yet. Conceptual learning clear all my doubts. This is the place where i have build my confidence level and now i can answer all the questions in school without any hesitation.during this pandemic also this institute had try its best to give a enjoyable and understandable learning,as a good and helpful student i recommend you to try once.",
+  },
+  {
+    author: "Grantik Sahni",
+    comment:
+      "My sir is very thorough and take careful measures in helping me grasp the concept more carefully and helps me to concentrate on my study very well.That has made me really think about how I should come up with the answer.I like how he is straight forward and answers our every single doubt to the point.Great sir ever had!!!",
+  },
+  {
+    author: "Sarita Chaudhary",
+    comment:
+      "Absolutely one of the finest learning places i have chosen for my daughter. They are excellent teachers. Hearts of teachers brimmed with love and patience for the students have given no possibility for any sense of discouragement, despondency or pessimism among students. Everything from revision tests to discipline are maintained or carried out in a systematic way which increases the proficiency of learners.",
+  },
+  {
+    author: "Prabhleen Kaur",
+    comment:
+      "Studying in this Institute is really intriguing.... As the teachers in the Institute create such exciting ways to explain a concept and provide you a platform to conveniently showcase your skills and knowledge..",
+  },
+  {
+    author: "Meenu",
+    comment:
+      "Best place for build your future whosoever had come here is never gone upset or doubtful. Once you come here you will never leave till you study in school. Trust me he is a world best teacher i have ever seen , he is just a knowledge book. SANDEEP SIR is the best teacher in the world😀 …",
+  },
+  {
+    author: "Abhinav Jha",
+    comment: "Concepts are crystal clear. Good teaching 👍 …",
+  },
+  {
+    author: "Payal Mehta",
+    comment:
+      "100% satisfied with Sandeep sir. I have never seen any teacher doing so much of hard work for his students. My son Aryan Mehta is very lucky to have Sandeep sir as his teacher.",
+  },
 ];
 
 export { features, testimonials, results, courses };

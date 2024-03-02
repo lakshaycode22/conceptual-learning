@@ -63,7 +63,7 @@ const Contact = () => {
       );
   };
   return (
-    <div className="mx-8 md:mx-20 rounded-lg text-secondary-500">
+    <div className=" rounded-lg max-w-7xl mx-auto">
         
       <div className="grid md:grid-cols-2 items-center gap-16 sm:p-10 p-4">
         <div>
@@ -74,7 +74,7 @@ const Contact = () => {
             Need mentorship for your schooling? Then reach out to us, we'd love
             to hear about you.
           </p>
-          <ul className="mt-12 space-y-8 text-xl">
+          <ul className="mt-12 space-y-8 text-darkGreen text-xl">
             <li className="flex items-center">
               <TbMailFilled />
               <a href="mailto: info@example.com" className="  ml-3">
@@ -105,7 +105,7 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-12 flex flex-col gap-8 bg-secondary-500 text-primary-900 p-4 md:p-8 rounded-xl"
+            className="mt-12 flex flex-col gap-8 bg-green p-4 md:p-8 rounded-xl"
           >
             <label className="flex flex-col">
               <span className=" font-medium mb-4">Your Name</span>
@@ -115,7 +115,7 @@ const Contact = () => {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your good name?"
-                className=" py-4 px-6   rounded-lg outline-none border-none font-medium"
+                className=" py-4 px-6 text-white  rounded-lg outline-none border-none font-medium"
               />
             </label>
             <label className="flex flex-col">
@@ -143,7 +143,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-primary-900 text-secondary-500 py-3 px-8 rounded-xl outline-none w-fit font-bold shadow-md"
+              className="bg-darkGreen text-white py-3 px-8 rounded-xl outline-none w-fit font-bold shadow-md"
             >
               {loading ? "Sending..." : "Send"}
             </button>

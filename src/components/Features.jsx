@@ -6,13 +6,18 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
 const Features = () => {
+  const backgroundColor = [
+    "border-darkGreen",
+    "border-darkBlue",
+    "border-darkYellow",
+  ];
   return (
-    <div className="bg-primary-900 text-secondary-400">
-      <div className="max-w-6xl mx-auto py-16 px-4">
-        <h3 className="text-md text-center text-tertiary-200">Our Services</h3>
+    <div className="">
+      <div className="max-w-7xl mx-auto py-16 px-4">
+        <h3 className="text-md text-center">Our Services</h3>
         <motion.h2
           variants={textVariant()}
-          className="text-4xl font-extrabold text-center mb-16 text-secondary-500"
+          className="text-4xl font-extrabold text-center mb-16"
         >
           Make The Change You Deserve
         </motion.h2>
@@ -20,19 +25,31 @@ const Features = () => {
           {features &&
             features.map((feature, key) => {
               return (
-                <motion.div variants={fadeIn("right", "spring", 0.5 * (key % 3), 0.75)}>
+                <motion.div
+                  variants={fadeIn("right", "spring", 0.5 * (key % 3), 0.75)}
+                >
                   <Tilt
                     key={key}
-                    className="bg-primary-900 border text-tertiary-200 border-tertiary-200 overflow-hidden rounded-lg shadow-card"
+                    className={
+                      "text-justify overflow-hidden rounded-lg border-4 " +
+                      backgroundColor[(key + 2) % 3]
+                    }
                   >
-
                     <div className="p-6">
-                      <img src={feature.image} className="w-full h-48 rounded-lg"/>
+                      <div className="">
+                        <img
+                          className=""
+                          src={feature.image}
+                        />
+                      </div>
+
                       {/* <feature.icon className="text-6xl" /> */}
-                      <h3 className="text-2xl font-semibold my-2 mt-4">
+                      <h3 className="text-2xl font-semibold my-2 mt-4 text-center">
                         {feature.title}
                       </h3>
-                      <p className="text-md text-tertiary-500">{feature.paragraph}</p>
+                      <p className="text-md text-tertiary-500">
+                        {feature.paragraph}
+                      </p>
                     </div>
                   </Tilt>
                 </motion.div>

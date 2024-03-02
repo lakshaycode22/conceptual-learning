@@ -29,7 +29,7 @@ const Courses = () => {
             {grades &&
               grades.map((grade, key) => {
                 return (
-                  <div className="green-pink-gradient p-1 rounded-lg">
+                  <div className="green-blue-gradient p-1 rounded-lg">
                     <motion.button
                       key={key}
                       variants={fadeIn(
@@ -89,7 +89,7 @@ const Courses = () => {
                   })}
               </div>
 
-              <h2 className="text-2xl font-semibold text-secondary-500 my-2">
+              <h2 className="text-2xl font-semibold text-secondary-500 my-2 mt-8">
                 Attributes
               </h2>
               <ul className="list-disc mt-8">

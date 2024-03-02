@@ -4,70 +4,35 @@ export default {
 
   theme: {
     colors: {
-      primary: {
-        100: "#C4B9AB",
-        200: "#B3A594",
-        300: "#a2917c",
-        400: "#8F7D66",
-        500: "#776855",
-        600: "#5F5344",
-        700: "#483F33",
-        800: "#302A22",
-        900: "#181511",
-      },
-      secondary: {
-        100: "#FFEFD7",
-        200: "#FEE0AE",
-        300: "#FED085",
-        400: "#FEC05D",
-        500: "#FEAE2B",
-        600: "#FEA10B",
-        700: "#DF8A01",
-        800: "#B77101",
-        900: "#8E5801",
-      },
-      tertiary: {
-        100: "#FFFFFF",
-        200: "#EBEBEB",
-        300: "#D6D6D6",
-        400: "#C2C2C2",
-        500: "#ADADAD",
-        600: "#999999",
-        700: "#858585",
-        800: "#707070",
-        900: "#5C5C5C",
-      },
-      // primary: {
-      //   900: "#000234",
-      // },
-      // secondary: {
-      //   400: "#FD9235",
-      //   500: "#FD7702",
-      // },
-      // primary: {
-      //   900: "#103059",
-      // },
-      // secondary: {
-      //   400: "#F6C451",
-      //   500: "#F4B626",
-      // },
-      // primary: {
-      //   900: "#000000",
-      // },
-      // secondary: {
-      //   400: "#FFFFFF",
-      //   500: "#FFFFFF",
-      // },
+      white: "#ffffff",
+      green: "#23D39D",
+      darkGreen : "#1D6750",
+      blue: "#46DAFF",
+      darkBlue: "#0171DB",
+      yellow: "#FFD64C",
+      darkYellow: "#D9AF17",
+      black:"#000000"
     },
     extend: {
-      boxShadow: {
-        card: "0px 35px 120px -15px #302A22",
+      boxShadowGreen: {
+        card: "0px 35px 120px -15px #23D39D",
       },
-      backgroundImage: {
-        "hero-pattern": "url('https://images.unsplash.com/photo-1517241034903-9a4c3ab12f00?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+      boxShadowBlue: {
+        card: "0px 35px 120px -15px #46DAFF",
       },
+      boxShadowYellow: {
+        card: "0px 35px 120px -15px #FFD64C",
+      },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      }      
     },
-
   },
   plugins: [],
 };

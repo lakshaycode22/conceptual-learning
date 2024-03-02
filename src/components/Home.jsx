@@ -6,15 +6,19 @@ import Results from "./Results";
 import Testimonials from "./Testimonials";
 import Map from "./Map";
 import Contact from "./Contact";
+import TestimonialSlider from "./TestimonialSlider";
 
 const Home = () => {
   return (
     <Fragment>
         <Hero />
+
         <Statistics />
         <Features />
+
         <Results />
-        <Testimonials />
+        {/* <Testimonials /> */}
+        <TestimonialSlider/>
         <Map />
         <Contact />
     </Fragment>

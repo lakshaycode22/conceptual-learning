@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { SectionWrapper } from "../hoc";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/logo.png"
 
 const Navbar = () => {
   const [state, setState] = useState(false);
@@ -14,13 +15,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-primary-900 border-b w-full md:static md:text-sm md:border-none">
+    <nav className="bg-primary-900 border-b w-full md:static md:text-sm md:border-none max-w-7xl mx-auto">
       <div className="text-tertiary-100 text-lg items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="/">
             <img
-              src=""
-              width={120}
+              src={logo}
+              width={50}
               height={50}
               alt="Conceptual learning"
             />

@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <div className="bg-primary-900">
       <div className="mx-8 max-w-6xl lg:mx-auto pb-16 mt-8">
-        <motion.h1 variants={textVariant()} className="md:text-8xl text-5xl font-black text-center md:text-left text-secondary-500 mb-4 md:mb-8">
+        <motion.h1 variants={textVariant()} className="md:text-8xl text-5xl font-black text-center md:text-left mb-4 md:mb-8 text-darkGreen">
           Welcome to Conceptual Learning
         </motion.h1>
 
@@ -18,7 +18,7 @@ const AboutUs = () => {
           transformative journey with us.
         </p>
 
-        <motion.h1 variants={textVariant(1)} className="md:text-5xl text-3xl font-black text-center md:text-left text-secondary-500 mb-4 md:mb-8">
+        <motion.h1 variants={textVariant(1)} className="md:text-5xl text-3xl font-black text-center text-darkBlue md:text-left text- mb-4 md:mb-8">
           About Us
         </motion.h1>
         <p className="md:text-xl text-md text-justify md:text-left mb-4 md:mb-8">
@@ -28,7 +28,7 @@ const AboutUs = () => {
           coaching programs in Mathematics, Science, English, Social Studies to
           empower students with the knowledge and skills they need to succeed.
         </p>
-        <motion.h1 variants={textVariant(1.5)} className="md:text-5xl text-3xl font-black text-center md:text-left text-secondary-500 mb-4 md:mb-8">
+        <motion.h1 variants={textVariant(1.5)} className="md:text-5xl text-3xl font-black text-center md:text-left text-darkYellow text- mb-4 md:mb-8">
           Mission and Values
         </motion.h1>
         <p className="md:text-xl text-md text-justify md:text-left mb-4 md:mb-8">
@@ -38,17 +38,17 @@ const AboutUs = () => {
         </p>
         <ul className="md:text-xl text-md text-justify md:text-left mb-4 md:mb-8">
           <li className="md:mb-4 mb-2">
-            <span className="text-secondary-400">Academic Excellence: </span>
+            <span className="text-darkGreen font-bold">Academic Excellence: </span>
             Providing rigorous academic programs that challenge and inspire
             students to reach their full potential.
           </li>
           <li className="md:mb-4 mb-2">
-            <span className="text-secondary-400">Holistic Development: </span>
+            <span className="text-darkBlue font-bold">Holistic Development: </span>
             Nurturing the intellectual, emotional, and social development of
             students to prepare them for success in an ever-changing world.
           </li>
           <li className="md:mb-4 mb-2">
-            <span className="text-secondary-400">Personalized Learning: </span>
+            <span className="text-darkYellow font-bold">Personalized Learning: </span>
             Tailoring our approach to meet the individual needs and learning
             styles of each student, fostering a supportive and inclusive
             learning community.
@@ -61,22 +61,22 @@ const AboutUs = () => {
         </p>
         <ul className="md:text-xl text-md text-justify md:text-left mb-4 md:mb-8">
           <li className="md:mb-4 mb-2">
-            <span className="text-secondary-400">Integrity: </span>Operating
+            <span className="text-darkGreen font-bold">Integrity: </span>Operating
             with honesty, transparency, and ethical conduct in all our
             endeavors.
           </li>
           <li className="md:mb-4 mb-2">
-            <span className="text-secondary-400">Innovation: </span>Embracing
+            <span className="text-darkBlue font-bold">Innovation: </span>Embracing
             creativity, adaptability, and continuous improvement to enhance the
             learning experience.
           </li>
           <li className="md:mb-4 mb-2">
-            <span className="text-secondary-400">Inclusivity: </span>Celebrating
+            <span className="text-darkYellow font-bold">Inclusivity: </span>Celebrating
             diversity and creating an environment where every student feels
             valued, respected, and supported.
           </li>
           <li className="md:mb-4 mb-2">
-            <span className="text-secondary-400">Student-Centeredness: </span>
+            <span className="text-darkGreen font-bold">Student-Centeredness: </span>
             Placing students at the heart of everything we do, prioritizing
             their needs, aspirations, and well-being.
           </li>

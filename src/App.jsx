@@ -7,13 +7,13 @@ import AboutUs from "./components/AboutUs";
 
 function App() {
   return (
-    <div className="bg-primary-900">
+    <div className="bg-white text-black">
       <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
-          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/about-us" element={<AboutUs />} /> 
         </Routes>
       </BrowserRouter>
     </div>

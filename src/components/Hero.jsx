@@ -1,33 +1,29 @@
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import HeroBg1 from "../assets/HeroBg1.png"
 
 const Hero = () => {
   return (
-    <section className= "max-w-7xl mx-auto  text-tertiary-200 md:flex mb-4 md:mb-0 px-6">
-      <div className="py-8 max-w-screen-xl text-center md:text-left lg:py-16">
-        <div className="mb-2">
-          Visit us today
-        </div>
-        <motion.h1 variants={textVariant()} class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-7xl text-secondary-500">
-        {/* <ReactTyped
-          strings={["Conceptual Learning","Sandeep Bhasin"]}
-          typeSpeed={100}
-          loop
-          backSpeed={20}
-          cursorChar=">"
-          showCursor={true}
-        /> */}
-        Conceptual Learning
+    <section className="max-w-7xl mx-auto  md:flex mb-4 md:mb-0 px-6">
+      <div className="max-w-screen-xl text-center md:text-left py-8">
+        <div className="mb-2 md:text-4xl text-2xl">Welcome to</div>
+        <motion.h1
+          variants={textVariant()}
+          class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-7xl text-secondary-500"
+        >
+          CONCEPTUAL LEARNING
         </motion.h1>
-        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl">
-          A reliable source when you need help understanding any subject. We
-          invest in the world’s potential.
+        <p class="mb-2 text-xl font-normal text-gray-500 md:text-2xl">
+        Where <span className="text-darkGreen font-semibold">Maths and Science</span>  comes to life
+        </p>
+        <p class="mb-8 text-lg font-normal text-gray-500 md:text-xl">
+        Transforming education with engaging animations for grades VIth to XIIth.
         </p>
         <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
           <a
             href="#features"
-            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4"
+            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center  rounded-full text-white text-xl green-blue-gradient"
           >
             Learn more
             <svg
@@ -45,7 +41,7 @@ const Hero = () => {
           </a>
           <a
             href="#"
-            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center rounded-lg border"
+            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center rounded-full border"
           >
             <svg
               class="mr-2 -ml-1 w-5 h-5"
@@ -59,8 +55,13 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="ml-auto md:w-9/12 md:pt-8">
-        <img src="https://images.pexels.com/photos/301926/pexels-photo-301926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="image" className="rounded-md" />
+      <div className=" md:w-11/12 md:pt-10 md:pl-20">
+        <img
+          // src="https://images.pexels.com/photos/301926/pexels-photo-301926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src = {HeroBg1}
+          alt="image"
+          className="rounded-md"
+        />
       </div>
     </section>
   );
