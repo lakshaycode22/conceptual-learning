@@ -6,19 +6,16 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { isMobile } from "react-device-detect";
 
-const Card = ({ feature, key }) => {
+const Card = ({ feature, index }) => {
   const backgroundColor = [
     "border-darkGreen",
     "border-darkBlue",
     "border-darkYellow",
   ];
   return (
-    <div
-      key={key}
-      className={
-        "text-justify overflow-hidden rounded-lg border-4 " +
-        backgroundColor[(key + 2) % 3]
-      }
+    <Tilt
+      className={`text-justify overflow-hidden rounded-lg border-4 
+        ${backgroundColor[(index + 2) % 3]}`}
     >
       <div className="p-6">
         <div className="">
@@ -30,29 +27,36 @@ const Card = ({ feature, key }) => {
         </h3>
         <p className="text-md text-tertiary-500">{feature.paragraph}</p>
       </div>
-    </div>
+    </Tilt>
   );
 };
 
 const Features = () => {
   return (
     <div className="">
-      <div className="max-w-7xl mx-auto py-16 px-4">
+      <div className="max-w-7xl mx-auto py-16 md:py-4 px-4">
         <h3 className="text-md text-center">Our Services</h3>
-        <motion.h2
-          variants={textVariant()}
-          className="text-4xl font-extrabold text-center mb-16"
-        >
-          Make The Change You Deserve
-        </motion.h2>
+        {isMobile ? (
+          <h2 className="text-4xl font-extrabold text-center mb-16">
+            Make The Change You Deserve
+          </h2>
+        ) : (
+          <motion.h2
+            variants={textVariant()}
+            className="text-4xl font-extrabold text-center mb-16"
+          >
+            Make The Change You Deserve
+          </motion.h2>
+        )}
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-14 max-md:max-w-md mx-auto">
           {features &&
             features.map((feature, key) => {
               return (
-                <div>
+                <div key={key}>
                   {isMobile ? (
                     <div>
-                      <Card feature={feature} key={key}></Card>
+                      <Card feature={feature} index={key}></Card>
                     </div>
                   ) : (
                     <motion.div
@@ -63,7 +67,7 @@ const Features = () => {
                         0.75
                       )}
                     >
-                      <Card feature={feature} key={key}></Card>
+                      <Card feature={feature} index={key}></Card>
                     </motion.div>
                   )}
                 </div>

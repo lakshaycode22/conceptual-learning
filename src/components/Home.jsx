@@ -18,9 +18,9 @@ const Home = () => {
 
         <Results />
         {/* <Testimonials /> */}
-        <TestimonialSlider/>
-        <Map />
-        <Contact />
+        {/* <TestimonialSlider/> */}
+        {/* <Map /> */}
+        {/* <Contact /> */}
     </Fragment>
   );
 };
