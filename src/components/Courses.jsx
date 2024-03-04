@@ -74,13 +74,19 @@ const Courses = () => {
                     return (
                       <div
                         key={key}
-                        className={`p-20 shadow-lg shadow-${color[key%3]}/50 hover:border-2 hover:border-${color[key%3]}`}
+                        className={`px-20 py-10 shadow-lg shadow-${color[key%3]}/50 hover:border-2 hover:border-${color[key%3]}`}
                       >
+                        <div>
+                          <subject.icon className="text-5xl mx-auto mb-10"/>
+                        </div>
+                        <div>
                         {
                           subject.title.split(" ")[
                             subject.title.split(" ").length - 1
                           ]
                         }
+                        </div>
+                       
                       </div>
                     );
                   })}

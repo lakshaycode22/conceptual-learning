@@ -4,6 +4,9 @@ import { FaComputer } from "react-icons/fa6";
 import { BiSolidVideoRecording } from "react-icons/bi";
 import { SiTestcafe } from "react-icons/si";
 import { LuMessagesSquare } from "react-icons/lu";
+import { TbMathSymbols } from "react-icons/tb";
+import { MdScience } from "react-icons/md";
+import { RiEnglishInput } from "react-icons/ri";
 
 import classes from "../assets/featureImages/classes.png";
 import goals from "../assets/featureImages/goals.png";
@@ -27,6 +30,7 @@ const courses = [
     subjects: [
       {
         title: "CBSE Class 9 th Maths",
+        icon : TbMathSymbols,
         chapters: [
           "Number system",
           "Polynomials",
@@ -39,6 +43,7 @@ const courses = [
       },
       {
         title: "CBSE Class 9- Science",
+        icon: MdScience,
         chapters: [
           "Matter in Our Surrounding",
           "Is Matter Around Us Pure.",
@@ -51,6 +56,7 @@ const courses = [
       },
       {
         title: "CBSE Class 9 – English",
+        icon : RiEnglishInput,
         chapters: [
           "Articles",
           "Nouns",
@@ -80,6 +86,7 @@ const courses = [
     subjects: [
       {
         title: "CBSE Class 10 MAth",
+        icon : TbMathSymbols,
         chapters: [
           "Real Number",
           "Polynomials",
@@ -97,6 +104,7 @@ const courses = [
       },
       {
         title: "CBSE Class 10 -Science",
+        icon: MdScience,
         chapters: [
           "Chemical Reaction n Equation",
           "Acids, Bases and Salts",

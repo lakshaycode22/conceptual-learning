@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { SectionWrapper } from "../hoc";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.png"
 
 const Navbar = () => {
   const [state, setState] = useState(false);
   const navigate = useNavigate();
 
   const navigation = [
-    { title: "Home", path: "/" },
+    { title : "Home", path:"/"},
     { title: "Courses", path: "/courses" },
     { title: "About Us", path: "/about-us" },
     { title: "Gallery", path: "/gallery" },
@@ -19,7 +19,12 @@ const Navbar = () => {
       <div className="text-tertiary-100 text-lg items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="/">
-            <img src={logo} width={50} height={50} alt="Conceptual learning" />
+            <img
+              src={logo}
+              width={50}
+              height={50}
+              alt="Conceptual learning"
+            />
           </a>
           <div className="md:hidden">
             <button
@@ -66,10 +71,7 @@ const Navbar = () => {
           <ul className=" justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
             {navigation.map((item, idx) => {
               return (
-                <li
-                  key={idx}
-                  className=" hover:text-secondary-500 hover:bg-opacity-30 hover:bg-secondary-500 px-4 py-2"
-                >
+                <li key={idx} className=" hover:text-secondary-500 hover:bg-opacity-30 hover:bg-secondary-500 px-4 py-2">
                   <button onClick={() => navigate(item.path)} className="block">
                     {item.title}
                   </button>
