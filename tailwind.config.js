@@ -16,6 +16,12 @@ export default {
       black:"#000000"
     },
     extend: {
+      fontFamily: {
+        
+       },
+      backgroundImage: {
+        'hero-pattern': "url('/src/assets/heroImage.png')",
+      },
       boxShadowGreen: {
         card: "0px 35px 120px -15px #23D39D",
       },
@@ -46,7 +52,7 @@ export default {
         'spin-slow-30': 'spin 30s linear infinite',
         'spin-slow-25': 'spin 25s linear infinite',
         'spin-slow-10': 'spin 10s linear infinite',
-        'marquee-infinite' : 'loop-scroll 60s linear infinite',
+        'marquee-infinite' : 'loop-scroll 120s linear infinite',
       },      
     },
   },

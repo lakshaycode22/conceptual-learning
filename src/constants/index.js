@@ -8,12 +8,12 @@ import { TbMathSymbols } from "react-icons/tb";
 import { MdScience } from "react-icons/md";
 import { RiEnglishInput } from "react-icons/ri";
 
-import classes from "../assets/featureImages/classes.png";
-import goals from "../assets/featureImages/goals.png";
-import online from "../assets/featureImages/online.png";
-import recorded from "../assets/featureImages/recorded.png";
-import tests from "../assets/featureImages/tests.png";
-import doubt from "../assets/featureImages/doubt.png";
+import classes from "../assets/featureImages/classes.jpeg";
+import goals from "../assets/featureImages/goals.jpg";
+import online from "../assets/featureImages/online.jpg";
+import recorded from "../assets/featureImages/recorded.jpg";
+import tests from "../assets/featureImages/tests.jpg";
+import doubt from "../assets/featureImages/doubt.jpg";
 
 import abhimanuGaba from "../assets/results/AbhimanuGaba.jpg";
 import arnavBansal from "../assets/results/ArnavBansal.jpg";

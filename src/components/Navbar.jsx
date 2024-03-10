@@ -11,11 +11,12 @@ const Navbar = () => {
     { title : "Home", path:"/"},
     { title: "Courses", path: "/courses" },
     { title: "About Us", path: "/about-us" },
-    { title: "Gallery", path: "/gallery" },
+    // { title: "Gallery", path: "/gallery" },
   ];
 
   return (
-    <nav className="bg-primary-900 border-b w-full md:static md:text-sm md:border-none max-w-7xl mx-auto">
+    <div className="bg-[#374151] text-white">
+<div className="border-b w-full md:static md:text-sm md:border-none max-w-7xl mx-auto">
       <div className="text-tertiary-100 text-lg items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="/">
@@ -81,8 +82,11 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
+    </div>
+    
+    
   );
 };
 
-export default SectionWrapper(Navbar, "navbar");
+export default Navbar;

@@ -10,7 +10,7 @@ const AboutUs = () => {
       <div className="mx-8 max-w-6xl lg:mx-auto pb-16 mt-8">
         <motion.h1
           variants={textVariant()}
-          className="md:text-8xl text-5xl font-black text-center md:text-left mb-4 md:mb-8 text-darkGreen"
+          className="md:text-8xl text-5xl font-black text-center md:text-left mb-4 md:mb-8 text-darkGreen font-[Libre]"
         >
           Welcome to Conceptual Learning
         </motion.h1>
@@ -83,7 +83,7 @@ const AboutUs = () => {
           </li>
         </ul>
 
-        <p className="md:text-3xl text-xl text-justify md:text-left mb-4 md:mb-8 font-semibold">
+        {/* <p className="md:text-3xl text-xl text-justify md:text-left mb-4 md:mb-8 font-semibold">
           At Conceptual Learning, our core values guide every aspect of our
           practices and interactions. We uphold:
         </p>
@@ -125,11 +125,12 @@ const AboutUs = () => {
             values in our students, empowering them to become lifelong learners,
             critical thinkers, and responsible global citizens.
           </p>
+          </ul> */}
           <p className="md:text-3xl text-xl text-justify md:text-left mb-4 md:mb-8 font-semibold">
             Welcome to Conceptual Learning, where every student&#39;s journey to
             success begins!
           </p>
-        </ul>
+        
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import Testimonials from "./Testimonials";
 import Map from "./Map";
 import Contact from "./Contact";
 import TestimonialSlider from "./TestimonialSlider";
+import FAQ from "./FAQ";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         <Statistics />
         {/* <Testimonials /> */}
         <TestimonialSlider/>
+        <FAQ/>
         <Map />
         <Contact />
     </Fragment>

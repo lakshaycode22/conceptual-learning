@@ -13,21 +13,21 @@ const Card = ({ feature, index }) => {
     "border-darkYellow",
   ];
   return (
-    <Tilt
-      className={`text-justify overflow-hidden rounded-lg border-4 
+    <div
+      className={`text-center overflow-hidden rounded-lg
         ${backgroundColor[(index + 2) % 3]}`}
     >
-      <div className="p-6">
-        <div className="">
-          <img className="" src={feature.image} />
+      <div className="">
+        <div className="flex justify-center">
+          <img className="rounded-full w-80 h-80 object-cover" src={feature.image} />
         </div>
 
-        <h3 className="text-2xl font-semibold my-2 mt-4 text-center">
+        <h3 className="text-4xl font-semibold my-2 mt-[-24px] backdrop-blur-lg text-center">
           {feature.title}
         </h3>
         <p className="text-md text-tertiary-500">{feature.paragraph}</p>
       </div>
-    </Tilt>
+    </div>
   );
 };
 
@@ -35,7 +35,7 @@ const Features = () => {
   return (
     <div className="">
       <div className="max-w-7xl mx-auto py-16 md:py-4 px-4">
-        <h3 className="text-md text-center">Our Services</h3>
+        <h3 className="text-md text-center">Our Features</h3>
         {isMobile ? (
           <h2 className="text-4xl font-extrabold text-center mb-16">
             Make The Change You Deserve
